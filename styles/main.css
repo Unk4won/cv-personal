@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+MEDIDAS DEL CV - 21 X 30 CM
+PX ->   794 X  100VH 
+*/
+
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family:"Poppins", sans-serif;     
+}
+
+
+
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 16px;
+}
+
+h2{
+       font-size: 26px;
+       font-weight: 600;
+       color:#10b981;
+}
+
+h3{
+ font-size: 22px;
+font-weight: 500;
+color:#10b981;
+}
+
+
+h4{
+font-size: 20px;
+ font-weight: 400;
+}
+
+h5{
+font-size: 18px;
+ font-weight: 200;
+ color:#10b981;
+}
+
+ul{
+       list-style: none;
+}
+ 
+.cv__section-title{
+       margin-bottom: 1rem;
+}
+
+.cv {
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.25rem;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 8px 6px rgba(0, 0, 0, 0.185);
+}
+
+/* ===================== */
+/* ! HEADER              */
+/* ===================== */
+
+.cv__header {
+  background-color: #191919;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+
+.cv__image-wrapper {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.cv__profile {
+  flex: 1;
+  color: white;
+  text-align: center;
+}
+
+.profile__name {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  margin-bottom: 0.3rem;
+}
+
+.profile__title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #10b981;
+}
+
+
+/* ===================== */
+/* SECCIÓN: PROFILE      */
+/* ===================== */
+
+.profile {
+  background-color: #191919;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.profile__section-title {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  color: #10b981;
+  margin-bottom: 1rem;
+  border-left: 4px solid #10b981;
+  padding-left: 0.75rem;
+  font-weight: 600;
+}
+
+.profile__description {
+  line-height: 1.5;
+  color: #f9f9f9;
+  text-align: justify;
+}
+
+/* ====================================== */
+/*! CONTENEDOR PRINCIPAL DE LAS COLUMNAS  */
+/* ====================================== */
+.cv__main {
+  display: flex;
+  flex-direction: row;      
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 2rem;               
+  flex-wrap: nowrap;
+}
+
+/* Separador opcional (solo visible en escritorio) */
+.cv__column-line {
+  width: 6px;
+  border-radius: 1rem;
+  min-height: 100%;
+  background-color: #10b981;
+align-self: stretch
+}
+
+/* ====================================== */
+/*! COLUMNA IZQUIERDA (40%)               */
+/* ====================================== */
+.cv__column--left {
+  width: 40%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1.5rem;
+  background-color: #191919;
+  color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+}
+
+/* ====================================== */
+/* SECCIÓN: Technologies and Tools        */
+/* ====================================== */
+.technologies {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.technologies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.technologies__item {
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.technologies__item h5 {
+  color: #10b981;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+/* ====================================== */
+/* SECCIÓN: Academic Background           */
+/* ====================================== */
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.education__degree {
+  font-size: 1rem;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.education__institution {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.education__date {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* ====================================== */
+/* SECCIÓN: Languages                     */
+/* ====================================== */
+.languages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.languages__item {
+  list-style: disc;
+  font-size: 0.95rem;
+  color: #f0f0f0;
+}
+
+
+
+
+/* ====================================== */
+/*! COLUMNA DERECHA (60%)                 */
+/* ====================================== */
+.cv__column--right {
+  width: 60%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: #191919;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ====================================== */
+/* PROYECTOS DESTACADOS                  */
+/* ====================================== */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project {
+  background-color: #222222;
+  padding: 1.25rem;
+  border-left: 4px solid #10b981;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #10b981;
+  margin-bottom: 0.5rem;
+}
+
+.project__description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cecece;
+  margin-bottom: 0.75rem;
+}
+
+.project__details {
+  padding-left: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.project__detail {
+  list-style: disc;
+  margin-bottom: 0.3rem;
+  font-size: 0.92rem;
+  color: #dddddd;
+}
+
+.project__link {
+  font-size: 0.9rem;
+}
+
+.project__link-anchor {
+  color: #0e7662;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* ====================================== */
+/* CONTACTO                              */
+/* ====================================== */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact__item {
+  display: flex;
+align-items: center;
+  gap: 0.75rem;
+}
+
+.contact__icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #000000;;
+  color: #10b981;
+  margin-top: 0.2rem;
+}
+
+.contact__label {
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact__link,
+.contact__location {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+  word-break: break-word;
+}
+
+
+.download-button {
+width: 320px;
+  background-color: #10b981;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1rem auto;
+  display: block; 
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background-color: #0e7662;
+}
+
+/* ====================================== */
+/* RESPONSIVE                            */
+/* ====================================== */
+
+/* ================================ */
+/* 🔷 Responsive: Tablets (< 900px) */
+/* ================================ */
+@media (max-width: 900px) {
+  .cv__main {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .cv__column--left,
+  .cv__column--right {
+    width: 100%;
+  }
+
+  .cv__column-line {
+    display: none;
+  }
+
+  .cv__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .cv__image-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .cv__profile {
+    text-align: center;
+  }
+
+  .cv {
+    padding: 1rem;
+  }
+}
+
+/* ================================== */
+/* 🔸 Responsive: Móviles (< 600px)   */
+/* ================================== */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  .cv__header,
+  .cv__column--left,
+  .cv__column--right,
+  .project,
+  .profile {
+    padding: 1rem;
+  }
+
+  .profile__section-title,
+  .cv__section-title {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    border-left-width: 3px;
+  }
+
+  .profile__description,
+  .project__description,
+  .project__detail,
+  .contact__link,
+  .contact__label,
+  .languages__item {
+    font-size: 0.9rem;
+  }
+
+  .cv__image-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+
+  .cv__image {
+    padding: 0.3rem;
+  }
+
+  .project__name {
+    font-size: 1.05rem;
+  }
+
+  .project__link {
+    font-size: 0.85rem;
+  }
+
+  .technologies__item h5 {
+    font-size: 0.95rem;
+  }
+
+  .technologies__item p {
+    font-size: 0.9rem;
+  }
+
+  .contact__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
